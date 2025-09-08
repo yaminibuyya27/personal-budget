@@ -94,6 +94,11 @@ footer {
     text-align: center;
 }
 
+/* Modified the logo size to align with text in footer */
+.githublogo {
+    width: 10px;
+}
+
 main article {
     display: inline-block;
     width: 100%;

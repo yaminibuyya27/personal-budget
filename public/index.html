@@ -3,35 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is an SEO Change 1-->
+     <!-- Changed the author name -->
+    <meta name="author" content="Yamini Buyya">
     <title>Personal Budget</title>
-    <meta name="description" content="A free personal budger app">
-    <meta name="keywords" content="app free budget finance">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
+    <!-- This is an SEO Change 2-->
+     <!-- Given the fav icon for the HTML Page -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Updated the content of the description -->
+    <meta name="description" content="A free personal budget Management app">
+    <!-- This is SEO Change 3 -->
+     <!-- Updated the content of keywords -->
+    <meta name="keywords" content="Budget App, HTMl, CSS, SEO, Accessibility">
+    <!-- This is SEO Change 4 -->
+     <!-- Search engine to crawl the page -->
+    <meta name="robots" content="index, follow">
+    <!-- Added ./ to access css files -->
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
 
 <a href="#main" class="skip">Skip to content</a>
 
-    <nav>
+    <!-- This is Semantic HTMl Change 1 -->
+     <!-- Given aria-label to nav tag -->
+    <nav aria-label="Primary Navigation">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
+            <!-- Fix home link to index.html -->
+            <li><a href="./index.html">Home</a></li>
+            <!-- Added . to access about and login html pages -->
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
         </ul>
     </nav>
 
-    <div class="hero">
-        <h1>Personal Budget</h1>
-        <h2>A personal-budget management app</h2>
+    <!-- This is A11y Change 1 -->
+     <!-- Given tabindex for keyboard focusable -->
+    <div class="hero" tabindex="0">
+        <!-- This is Semantic HTML Change 2 -->
+         <!-- Given header tag -->
+        <!--  This is A11y Change 2 -->
+          <!-- Given role for the header -->
+        <header role="banner">
+            <h1>Personal Budget</h1>
+            <h2>A personal-budget management app</h2>
+        </header>
     </div>
 
     <main class="center" id="main">
 
         <div class="page-area">
-
-            <article>
+            <!-- This is Semantic HTMl Change 3 -->
+             <!-- Grouped all articles into one section -->
+            <section aria-labelledby="features">
+                <article>
                 <h1>Stay on track</h1>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
@@ -94,15 +122,23 @@
                     <canvas id="myChart" width="400" height="400"></canvas>
                 </p>
             </article>
+            </section>
 
         </div>
 
     </main>
 
     <footer class="bottom">
-        <div class="center">
-            All rights reserved &copy; Fabio Nolasco
-        </div>
+        <!-- This is Semantic HTML Change 4 -->
+         <!-- Changed div to section -->
+        <section class="center">
+            All rights reserved &copy; Yamini Buyya
+            <a href="https://github.com/yaminibuyya27/personal-budget" target="_blank">
+                <!-- This is A11y Change 3 -->
+                <!-- clicking the icon takes the user to the source code of personal budget application -->
+                <img class="githublogo" src="./git_hub_icon.png" alt="Source" />
+            </a>
+        </section>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
